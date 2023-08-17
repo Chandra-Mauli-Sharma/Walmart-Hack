@@ -60,25 +60,25 @@ function Dashboard(props) {
   };
   const options2 = {
     title: {
-      text: "Sales of petroleum products March, Norway",
+      text: "Sales of all products March, India",
       align: "left",
     },
     xAxis: {
       categories: [
-        "Jet fuel",
-        "Duty-free diesel",
-        "Petrol",
-        "Diesel",
-        "Gas oil",
+        "Men Clothing",
+        "Female Clothing",
+        "Appliances",
+        "Cosmetics",
+        "Groceries",
       ],
     },
     yAxis: {
       title: {
-        text: "Million liters",
+        text: "Million Rupees",
       },
     },
     tooltip: {
-      valueSuffix: " million liters",
+      valueSuffix: " million Rupees",
     },
     plotOptions: {
       series: {
@@ -1745,15 +1745,10 @@ function Dashboard(props) {
   ];
 
   const options = {
-
     colors: ["transparent"].concat(Highcharts.getOptions().colors),
 
     title: {
-      text: "World population 2017",
-    },
-
-    subtitle: {
-      text: 'Source <a href="https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)">Wikipedia</a>',
+      text: "Sales Data 2020",
     },
 
     series: [
@@ -1897,64 +1892,8 @@ function Dashboard(props) {
             </Card>
           </Col>
         </Row>
-        <Row>
-          <Col lg="4">
-            <Card className="card-chart">
-              <CardHeader>
-                <h5 className="card-category">Total Shipments</h5>
-                <CardTitle tag="h3">
-                  <i className="tim-icons icon-bell-55 text-info" /> 763,215
-                </CardTitle>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Line
-                    data={chartExample2.data}
-                    options={chartExample2.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="4">
-            <Card className="card-chart">
-              <CardHeader>
-                <h5 className="card-category">Daily Sales</h5>
-                <CardTitle tag="h3">
-                  <i className="tim-icons icon-delivery-fast text-primary" />{" "}
-                  3,500€
-                </CardTitle>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Bar
-                    data={chartExample3.data}
-                    options={chartExample3.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="4">
-            <Card className="card-chart">
-              <CardHeader>
-                <h5 className="card-category">Completed Tasks</h5>
-                <CardTitle tag="h3">
-                  <i className="tim-icons icon-send text-success" /> 12,100K
-                </CardTitle>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Line
-                    data={chartExample4.data}
-                    options={chartExample4.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
+
+        {/* <Row>
           <Col lg="6" md="12">
             <Card className="card-tasks">
               <CardHeader>
@@ -2285,7 +2224,7 @@ function Dashboard(props) {
               </CardBody>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
       </div>
     </>
   );

@@ -16,7 +16,7 @@
 
 */
 import Dashboard from "views/Dashboard.js";
-import Icons from "views/Icons.js";
+import DemandPrediction from "views/DemandPrediction.js";
 import SimilarProduct from "views/SimilarProduct.js";
 import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
 import Notifications from "views/Notifications.js";
@@ -37,7 +37,7 @@ var routes = [
     path: "/demand-prediction",
     name: "Demand Prediction",
     icon: <SpaceDashboardIcon />,
-    component: <Icons />,
+    component: <DemandPrediction />,
     layout: "/admin",
   },
   {
