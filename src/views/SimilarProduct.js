@@ -14,6 +14,9 @@ function SimilarProduct() {
                 <h2 className="title" align="center">
                   Store Associability
                 </h2>
+                <h4 className="title" align="left">
+                  Items often bought together
+                </h4>
               </CardHeader>
               <CardBody className="all-icons">
                 <StoreDropdown />
