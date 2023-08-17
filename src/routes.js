@@ -17,8 +17,8 @@
 */
 import Dashboard from "views/Dashboard.js";
 import Icons from "views/Icons.js";
-import Map from "views/Map.js";
-import SpaceDashboardIcon from '@mui/icons-material/SpaceDashboard';
+import SimilarProduct from "views/SimilarProduct.js";
+import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
 import Notifications from "views/Notifications.js";
 import Rtl from "views/Rtl.js";
 import TableList from "views/TableList.js";
@@ -29,24 +29,23 @@ var routes = [
   {
     path: "/dashboard",
     name: "Dashboard",
-    icon: <SpaceDashboardIcon/>,
+    icon: <SpaceDashboardIcon />,
     component: <Dashboard />,
     layout: "/admin",
   },
   {
     path: "/demand-prediction",
     name: "Demand Prediction",
-    icon: <SpaceDashboardIcon/>,
+    icon: <SpaceDashboardIcon />,
     component: <Icons />,
     layout: "/admin",
   },
   {
     path: "/similar-products",
     name: "Similar Products",
-    icon: <SpaceDashboardIcon/>,
-    component: <Map />,
+    icon: <SpaceDashboardIcon />,
+    component: <SimilarProduct />,
     layout: "/admin",
   },
-
 ];
 export default routes;
