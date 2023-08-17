@@ -27,7 +27,11 @@ function StoreDropdown2() {
     <div>
       <FormControl>
         <InputLabel>Select Store</InputLabel>
-        <Select value={selectedStore} onChange={handleChange}>
+        <Select
+          style={{ width: "120px", color: "white" }}
+          value={selectedStore}
+          onChange={handleChange}
+        >
           {mockStores.map((store) => (
             <MenuItem key={store.id} value={store.name}>
               {store.name}
@@ -38,8 +42,8 @@ function StoreDropdown2() {
       <div>
         <iframe
           title="Embedded Content"
-          srcDoc={localStorage.getItem("../../pages/1.html")}
-          style={{ width: "100%", height: "300px", border: "none" }}
+          src="https://walmarthack.github.io/"
+          style={{ width: "100%", height: "600px", border: "none" }}
         />
       </div>
     </div>
