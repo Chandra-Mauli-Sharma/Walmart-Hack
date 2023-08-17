@@ -134,7 +134,6 @@ function Sidebar(props) {
                       className="nav-link"
                       onClick={props.toggleSidebar}
                     >
-                      <Icons co/>
                       <div>{props.icon}</div>
                       <p>{prop.name}</p>
                     </NavLink>
